@@ -1,5 +1,3 @@
-require 'pry'
-
 class School
   attr_accessor :roster
 
@@ -25,6 +23,3 @@ class School
     sorted
   end
 end
-
-# school = School.new("Bayside High School")
-# school.add_student("Zach Morris", 9)
