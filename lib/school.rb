@@ -13,11 +13,12 @@ class School
     roster[grade] << name
     
     def grade(grade)
-     @roster ||= School.sort_by(roster[:grade])
+     
     end 
     
-    def sort(roster) 
-     sorted = roster.sort {|name| name}
+    def sort(roster, name) 
+    # @roster ||= School.sort_by(roster[:grade])
+      School.sort_by(@roster[:name])
     end 
   end 
 end
