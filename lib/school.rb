@@ -15,6 +15,6 @@ class School
     @roster[grade]
   end
   def sort
-    @roster.each{|grade, names| names.sort!} #sort! will change the value we are sorting. sort wont return sorted
+    @roster.each_value{|names| names.sort!} #sort! will change the value we are sorting. sort wont return sorted
   end
 end
