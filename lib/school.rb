@@ -13,7 +13,7 @@ class School
     roster[grade] << name
     
     def grade(grade)
-      
+     @roster ||= School.sort_by(roster[:grade])
     end 
     
     def sort(roster) 
