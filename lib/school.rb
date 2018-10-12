@@ -17,7 +17,7 @@ class School
     end 
     
     def sort 
-      name.sort
+      roster.sort_by.name
     end 
     
   end 
