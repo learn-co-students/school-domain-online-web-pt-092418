@@ -14,11 +14,11 @@ class School
     
     def grade(grade)
       @grade
-      Roster.grade
+      roster.grade
     end 
     
     def sort(roster) 
-      Roster.sort
+     sorted = roster.sort {|name| name}
     end 
     
   end 
