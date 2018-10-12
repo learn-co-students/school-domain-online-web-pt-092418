@@ -13,14 +13,11 @@ class School
     roster[grade] << name
     
     def grade(grade)
-      @grade
-      roster.grade
+      
     end 
     
     def sort(roster) 
      sorted = roster.sort {|name| name}
     end 
-    
   end 
-  
 end
