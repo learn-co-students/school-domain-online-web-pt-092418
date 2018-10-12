@@ -17,8 +17,8 @@ class School
       Roster.grade
     end 
     
-    def sort(name) 
-      new_hash = [] << name.sort
+    def sort(roster) 
+      Roster.sort
     end 
     
   end 
