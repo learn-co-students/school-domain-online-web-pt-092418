@@ -31,10 +31,11 @@ class School
     @roster[grade] 
   end 
     
-  def sort(roster, name) 
-    # @roster ||= School.sort_by(roster[:grade])
-    roster.each do |grade, names_arr|
-      roster.sort
+  def sort
+    hash = {}
+    roster.sort.each do |grade, names_arr|
+      hash[grade] = names_arr.sort
     end
+    hash.sort.to_h
   end 
 end
