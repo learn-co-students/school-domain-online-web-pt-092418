@@ -28,11 +28,11 @@ class School
   end
     
   def grade(grade)
-    roster[grade] 
+    @roster[grade] 
   end 
     
   def sort(roster, name) 
     # @roster ||= School.sort_by(roster[:grade])
-    School.sort_by(@roster[:name])
+    roster.sort_by[name]
   end 
 end
