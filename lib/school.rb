@@ -34,6 +34,7 @@ class School
   def sort(roster, name) 
     # @roster ||= School.sort_by(roster[:grade])
     roster.each do |grade, names_arr|
+      roster.sort
     end
   end 
 end
